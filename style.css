@@ -1439,7 +1439,7 @@ Common Style CSS
 .main-menu > li.active > a,
 .main-menu > li:hover > a {
   background: rgba(255, 255, 255, 0.2);
-  color: #6c8e01;
+  color: #ffffff;
 }
 .dropdown,
 .mega-menu {
@@ -2837,7 +2837,7 @@ Common Style CSS
   margin-left: 5px;
 }
 .about-content > a.about-btn:hover {
-  color: #cc7000;
+  color: #6c8e01;
   background-color: white;
   border: 1px solid rgb(230, 230, 230);
 }
@@ -7738,3 +7738,21 @@ a.ideas-btn:hover {
   height: 600px;
 }
 }
+ .fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    .zoom-fade-in {
+    opacity: 0;
+    transform: scale(0.88);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .zoom-fade-in.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
