@@ -3645,6 +3645,84 @@ Common Style CSS
 .testimonial-slider.slider-dot-color-4 .owl-dots > .owl-dot.active,
 .testimonial-slider.slider-dot-color-4 .owl-dots > .owl-dot:hover {
   background: #b2936d;
+}/* Tablet */
+@media (max-width: 991px) {
+
+  .testimonial-area.testimonial-bg2 {
+    padding: 50px 15px;
+  }
+
+  .testimonial-content {
+    padding: 30px 20px;
+  }
+
+  .testimonial-content p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-author .author-img {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+
+  .testimonial-area.testimonial-bg2 {
+    padding: 40px 15px;
+  }
+
+  .testimonial-slider {
+    padding: 15px 5px;
+  }
+
+  .single-testimonial {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .testimonial-content {
+    padding: 20px 10px;
+  }
+
+  .testimonial-content p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-author .author-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .author-title {
+    font-size: 13px;
+  }
+
+  .section-title h3 {
+    font-size: 20px;
+  }
+
+}
+
+/* Extra Small Phones */
+@media (max-width: 375px) {
+
+  .testimonial-content p {
+    font-size: 12.5px;
+    line-height: 22px;
+  }
+
+  .testimonial-author .author-img {
+    width: 50px;
+    height: 50px;
+  }
+
 }
 /*------------------------
    12. Blog Area CSS
