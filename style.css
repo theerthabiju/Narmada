@@ -1298,7 +1298,13 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 .footer-bg2 {
-  background-color: #ebebeb;
+  /* background-image: url(img/banner/freepik__retouch__50828.png); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-middle-area{
+    background-image: url(img/banner/light_green_paint_background.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
