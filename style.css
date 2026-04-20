@@ -96,7 +96,6 @@ body {
 }
 .img-full img {
   max-width: 100%;
-
 }
 a,
 button {
@@ -1303,8 +1302,8 @@ textarea:focus {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.footer-middle-area{
-    background-image: url(img/banner/light_green_paint_background.jpg);
+.footer-middle-area {
+  background-image: url(img/banner/light_green_paint_background.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2558,7 +2557,7 @@ Common Style CSS
 .single-slider.single-slider-2 {
   padding-top: 220px;
   padding-bottom: 155px;
-  height: 1145px
+  height: 1145px;
 }
 
 .slider-content2 {
@@ -3645,9 +3644,8 @@ Common Style CSS
 .testimonial-slider.slider-dot-color-4 .owl-dots > .owl-dot.active,
 .testimonial-slider.slider-dot-color-4 .owl-dots > .owl-dot:hover {
   background: #b2936d;
-}/* Tablet */
+} /* Tablet */
 @media (max-width: 991px) {
-
   .testimonial-area.testimonial-bg2 {
     padding: 50px 15px;
   }
@@ -3666,12 +3664,10 @@ Common Style CSS
     width: 70px;
     height: 70px;
   }
-
 }
 
 /* Mobile */
 @media (max-width: 575px) {
-
   .testimonial-area.testimonial-bg2 {
     padding: 40px 15px;
   }
@@ -3707,12 +3703,10 @@ Common Style CSS
   .section-title h3 {
     font-size: 20px;
   }
-
 }
 
 /* Extra Small Phones */
 @media (max-width: 375px) {
-
   .testimonial-content p {
     font-size: 12.5px;
     line-height: 22px;
@@ -3722,7 +3716,6 @@ Common Style CSS
     width: 50px;
     height: 50px;
   }
-
 }
 /*------------------------
    12. Blog Area CSS
@@ -6766,7 +6759,7 @@ input.checkbox {
   padding: 8px 20px;
   cursor: pointer;
   margin: 20px 0;
-  text-align:;
+  text-align: center;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -7001,8 +6994,8 @@ input.checkbox {
   padding-top: 10px;
 }
 .service-info > h3 {
-  font-size: 13px;
-  color: #c6c6c6;
+  font-size: 14px;
+  color: #565656;
   text-align: left;
   font-weight: 700;
   font-style: normal;
@@ -7057,7 +7050,7 @@ a.ideas-btn:after {
 }
 a.ideas-btn:hover {
   background-color: #2a2a2a;
-  border-color: ##2a2a2a;
+  border-color: #2a2a2a;
   color: #fff;
 }
 .design-and-code-area {
@@ -7149,11 +7142,16 @@ a.ideas-btn:hover {
 }
 /*What We Do Area CSS */
 .service-bg-2 {
-  background-image: url(img/bg/service-bg3.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.about-img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .what-we-do-title > h2 {
   font-size: 30px;
   color: #444;
@@ -7168,7 +7166,7 @@ a.ideas-btn:hover {
 .service-icon3 {
   width: 60px;
   height: 60px;
-  border: 2px solid #4fc1f0;
+  border: 2px solid #6c8e01;
   line-height: 52px;
   text-align: center;
   border-radius: 100%;
@@ -7176,7 +7174,7 @@ a.ideas-btn:hover {
   -ms-flex: 0 0 60px;
   flex: 0 0 60px;
   font-size: 28px;
-  color: #4fc1f0;
+  color: #6c8e01;
 }
 .service-content {
   padding-left: 10px;
@@ -7814,35 +7812,37 @@ a.ideas-btn:hover {
   .menu-header-top-area {
     display: none;
   }
-  .slider-content2{
-	margin-top: 30px;
+  .slider-content2 {
+    margin-top: 30px;
   }
   .single-slider.single-slider-2 {
- 
-  height: 600px;
+    height: 600px;
+  }
 }
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
 }
- .fade-in-up {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.65s ease, transform 0.65s ease;
-  }
-  .fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-    .zoom-fade-in {
-    opacity: 0;
-    transform: scale(0.88);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .zoom-fade-in.visible {
-    opacity: 1;
-    transform: scale(1);
-  }
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.zoom-fade-in {
+  opacity: 0;
+  transform: scale(0.88);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.zoom-fade-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
 
-
-  /* About Page Banner */
+/* About Page Banner */
 .about-page-banner {
   background-image: url("img/banner/dosapic.png");
   background-size: cover;
@@ -7899,12 +7899,40 @@ a.ideas-btn:hover {
   text-decoration: none;
 }
 
-
-
 .breadcrumb-content ul li:last-child::after {
   display: none;
 }
 
 .breadcrumb-content ul li.active {
   color: #fff;
+}
+
+/* mission vision why choose about */
+
+.single-mission,
+.single-vision , .why-choose-area  {
+  background-color: #0000000d;
+  font-size: 14px;
+  color: #565656;
+  text-align: left;
+
+padding: 20px;  
+}
+.why{
+  font-size: 16px;
+  color:  #6c8e01;
+  text-align: center;
+font-weight: 700;
+margin-bottom: 30px;
+
+
+}
+.why-choose-area ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.why-choose-area ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
 }
