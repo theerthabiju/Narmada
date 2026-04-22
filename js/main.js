@@ -471,6 +471,23 @@ $('.counter').counterUp({
     delay: 70,
     time: 5000
 });
+
+/* --------------------------------------------------------
+sticky header*
+ -------------------------------------------------------*/
+
+
+
+  const header = document.querySelector('.default-header-area');
+  const stickyOffset = header.offsetTop;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > stickyOffset) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
 /* --------------------------------------------------------
     FAQ Accordion Active
 * -------------------------------------------------------*/ 
